@@ -1,0 +1,53 @@
+/* Configuración para la página completa */
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+  /* color: black; */
+}
+
+.fondo_verde {
+  background-color: #28a745;
+} 
+
+/* .color-precio-verde {
+  color: #28A745;
+} */
+
+.advice-title {
+  font-weight: 300; /*light*/
+  /* line-height: 24px; */
+}
+
+.color-gris707070 {
+color: #707070;
+}
+
+.weight-light {
+  font-weight: 300;
+}
+
+.advice-brand {
+  /* font-size: 16px; */
+  font-weight: 300; /*light*/
+  color: #707070;
+  /* line-height: 19px; */
+}
+
+.advice-address {
+  font-size: 13px;
+  font-weight: 300; /*light*/
+  color: #707070;
+  /* line-height: 15px; */
+} 
+
+.advice-pricing {
+}
+
+.low-prices {
+  font-weight: 500; /*light*/
+}
+
+.feature i {
+  /* display: block; */
+  padding: 2px;
+}

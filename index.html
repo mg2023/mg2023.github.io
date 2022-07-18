@@ -1,40 +1,380 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/ico">
-    <title>Desafío CV</title>
-</head>
-<body>
-    <h1 align="center">Curriculum Vitae    </h1>
-        <img src="assets/img/ronaldo.jpeg"  alt="imagen de ronaldo" width="500" style="width:300px; border-radius: 50%;"    >
-    <h2>Cristiano Ronaldo</h2>
-    <h3>Resumen</h3>
-        <p align="justify" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum harum odit atque eaque nihil. Explicabo dolores, doloribus animi libero quae harum maxime voluptas, dignissimos molestiae eos blanditiis quidem obcaecati.</p>
-    <h3>Datos personales</h3>
-        <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate provident animi, laborum, odit amet facere, eaque maiores nulla quibusdam repellat. Perferendis consequuntur quidem veritatis voluptatem iure voluptates adipisci cum.</p>
-    <h3>Formación</h3>
-        <p align="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum cupiditate accusantium reprehenderit a quasi mollitia eius consequuntur culpa repellendus dolore perferendis at quo, quaerat doloremque perspiciatis et odit, id nemo?
-            <ul>
-                <li>Escuela de fúltbol1    </li>
-                <li>Escuela de fúltbol2    </li>
-                <li>Escuela de fúltbol3    </li>
-                <li>Escuela de fúltbol4    </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Cuppon</title>
+    <!-- Podria ir el reset en caso de ser necesario -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Siempre antes de la hoja de estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/20eec21020.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Inicio navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark text-light bg-primary">
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary "></nav> -->
+        <div class="container">
+          <a class="navbar-brand text-light" href="#">Miguel Vergara</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#carouselExampleDark"
+                  >Carrusel</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#Listado">Listado de desafíos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Colaboraciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contacto</a>
+              </li>
+              </li>
             </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin navbar -->
+
+    <!-- Inicio carrusel -->
+    <div class="container px-5 py-4">
+      <div
+        id="carouselExampleDark"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              width="300"
+              height="600"
+              src="./assets/img/ronaldo2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Primer desafío: HTML</h5>
+              <p class="text-light">Se realizada CV solo con etiquetas HTML</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              width="300"
+              height="600"
+              src="./assets/img/guitarra.jpg"
+              class="d-block w-100"
+              alt="Cupones"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Segundo desafío: CCS</h5>
+              <p class="text-light">
+                Se realiza landpage utilizando HTML y CSS
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              width="300"
+              height="600"
+              src="./assets/img/iguana.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">
+                Tercer desafío: Posicionamiento con CSS
+              </h5>
+              <p class="text-light">
+                Se realizada landpage segun especificaciones aplicando display y
+                float.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              width="300"
+              height="600"
+              src="./assets/img/cupon-5.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">
+                Cuarto desafío: Responsividad con bootstrap
+              </h5>
+              <p class="text-light">
+                Se realiza página web optimizada para telefonos móviles y
+                desktop
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              width="300"
+              height="600"
+              src="./assets/img/bg-hero.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">
+                Quinto desafío: Control de versiones con GIT
+              </h5>
+              <p class="text-light">
+                Se aplica un flujo básico de versionado a un proyecto web
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Fin Carrusel -->
+
+    <!-- Inicio lista -->
+    <div class="container px-5">
+      <div class="list-group">
+        <a
+          id="Listado"
+          class="list-group-item list-group-item-action active"
+          aria-current="true"
+        >
+          Listado de Desafíos
+        </a>
+        <a href="#" class="list-group-item list-group-item-action"
+          >Desafío 1: Mi Curriculum Vitae en HTML</a
+        >
+        <a href="https://github.com/mg2023/desafio2" class="list-group-item list-group-item-action"
+          >Desafío 2: Construyendo un landing page</a
+        >
+        <a href="https://github.com/mg2023/desafio3" class="list-group-item list-group-item-action"
+          >Desafío 3: Iguana page</a
+        >
+        <a href="https://github.com/mg2023/desafio4" class="list-group-item list-group-item-action"
+          >Desafío 4: Cuppon</a
+        >
+        <a href="https://github.com/mg2023/fdsw-github" class="list-group-item list-group-item-action"
+          >Desafío 5: Github</a
+        >
+        <a class="list-group-item list-group-item-action disabled"
+          >Desafío 6: Desarrollo de portafolio</a
+        >
+      </div>
+    </div>
+
+    <!-- Fin lista -->
+
+    <!-- Inicio Galeria de fotos -->
+    <div class="container mt-3 px-5">
+      <div class="row gy-5">
+        <!-- Inicio Card1 -->
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img
+              src="./assets/img/cupon-1.jpg"
+              class="card-img-top"
+              alt="Cupon1"
+            />
+            <div class="card-body">
+              <p class="card-text advice-title fs-5">
+                Plumón Coral Fleece estampado en modelo y tamaño a elección
+              </p>
+              <p class="advice-brand">Plumones Manolino</p>
+              <div class="mb-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="card-text advice-address d-inline">
+                  9191 Avenida Vitacura, Chile
+                </p>
+              </div>
+              <div
+                class="card-footer bg-transparent border-light text-end pt-4"
+              >
+                <div class="d-inline p-2 color-gris707070 weight-light">
+                  $45.990
+                </div>
+                <div class="d-inline p-2 text-success low-prices fs-5">
+                  $22.990
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Card1 -->
+        <!-- Card2 -->
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img
+              src="./assets/img/cupon-2.jpg"
+              class="card-img-top"
+              alt="Cupon2"
+            />
+            <div class="card-body">
+              <p class="card-text advice-title fs-5">
+                Entrada para compartir + platos de fondo + postres + bebestibles
+              </p>
+              <p class="advice-brand fs-6">V for Vegan</p>
+              <div class="mb-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="card-text advice-address d-inline">
+                  777 Jesse Pinkman, Chile
+                </p>
+              </div>
+              <div
+                class="card-footer bg-transparent border-light text-end pt-4"
+              >
+                <div class="d-inline p-2 color-gris707070 weight-light">
+                  $30.990
+                </div>
+                <div class="d-inline p-2 text-success low-prices fs-5">
+                  $12.990
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Card2 -->
+      </div>
+    </div>
+    <!-- Fin Galeria de fotos de fotos -->
+
+    <!-- Formulario final -->
+    <div class="container-fuild bg-primary text-white py-4 my-5">
+      <form>
+        <div class="mb-3 text-center fs-5 px-5">
+          <label for="exampleInputEmail1" class="form-label"
+            >Conversemos!, yo invito el cafe</label
+          >
+          <input
+            placeholder="Nombre"
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3 px-5">
+          <input
+            placeholder="Correo Electrónico"
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="d-grid gap-2 col-1 mx-auto">
+          <button type="submit" class="btn btn-light">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Fin formulario final -->
+
+    <!-- Inicio Footer -->
+    <footer>
+      <div class="container text-center pb-3">
+        <h5 class="fw-bold">Portafolio Miguel Vergara 2022</h5>
+        <p class="color-gris707070 weight-light">
+          ©2022 Curso Javascript Full Stack Latam 2022. Todos los derechos
+          reservados.
         </p>
-    <h3>Premios</h3>
-        <p>
-            <ol>
-                <li>Premio: Mejores goles</li>
-                <li>Premio: Mejor sonrisa</li>
-                <li>Premio: Mejor salto</li>
-                <li>Premio: Mejor amigo</li>
-                <li>Premio: Mejores zapatos</li>
-            </ol>
-        </p>
-    <p>Fuente: <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Critiano Ronaldo</a></p>    
-    <p>Portefolio: <a href="portafolio.html" target="_blank">Portafolio</a></p>    
-</body>
+      </div>
+    </footer>
+    <!-- Fin footer -->
+
+    <!-- Interacciones, componentes y experiencias de usuario -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
