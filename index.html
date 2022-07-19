@@ -31,48 +31,53 @@
   <body>
     <!-- Inicio navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark text-light bg-primary">
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary "></nav> -->
-        <div class="container">
-          <a class="navbar-brand text-light" href="#">Miguel Vergara</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-light"
-                  aria-current="page"
-                  href="#carouselExampleDark"
-                  >Carrusel</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#Listado">Listado de desafíos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Colaboraciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contacto</a>
-              </li>
-              </li>
-            </ul>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark text-light bg-primary">
+          <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary "></nav> -->
+          <div class="container">
+            <a class="navbar-brand text-light" href="#">Miguel Vergara</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#carouselExampleDark"
+                    >Carrusel</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#Listado"
+                    >Listado de desafíos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#colaborativo"
+                    >Colaboraciones</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <!-- Fin navbar -->
 
@@ -159,8 +164,8 @@
                 Tercer desafío: Posicionamiento con CSS
               </h5>
               <p class="text-light">
-                Se realizada landpage segun especificaciones aplicando display y
-                float.
+                Se realizada landing page segun especificaciones aplicando
+                display y float.
               </p>
             </div>
           </div>
@@ -222,42 +227,124 @@
     </div>
     <!-- Fin Carrusel -->
 
+    <!-- Sobre mi -->
+    <div class="Container text-center py-4 px-5">
+      <h2>Sobre mi</h2>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <p>
+            Soy ingeniero civil electrónico titulado de la Universidad Técnica
+            Federico Santa María, apasionado por la tecnología, me dedico al
+            desarollo de sistemas para la resolución de problemas de la
+            industria actual. Tengo experiencia tanto en desarrollo de hardware
+            como de software. He liderado equipos trabajo bajo herramientas de
+            desarrollos ágiles para la creación de valor del producto, de la
+            mano de las necesidades del cliente
+          </p>
+          <a
+            class="btn btn-primary btn-sm"
+            href="https://www.linkedin.com/in/miguel-angel-vergara-arteaga-8b531147/"
+            role="button"
+            ><i class="fa-brands fa-linkedin fa-3x"></i
+          ></a>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <!-- Fin sobre mi -->
+
     <!-- Inicio lista -->
-    <div class="container px-5">
+    <div class="container px-5 col-sm-12 col-md-8">
       <div class="list-group">
         <a
           id="Listado"
           class="list-group-item list-group-item-action active"
           aria-current="true"
         >
-          Listado de Desafíos
-        </a>
-        <a href="#" class="list-group-item list-group-item-action"
-          >Desafío 1: Mi Curriculum Vitae en HTML</a
+          Listado de Desafíos</a
         >
-        <a href="https://github.com/mg2023/desafio2" class="list-group-item list-group-item-action"
-          >Desafío 2: Construyendo un landing page</a
-        >
-        <a href="https://github.com/mg2023/desafio3" class="list-group-item list-group-item-action"
-          >Desafío 3: Iguana page</a
-        >
-        <a href="https://github.com/mg2023/desafio4" class="list-group-item list-group-item-action"
-          >Desafío 4: Cuppon</a
-        >
-        <a href="https://github.com/mg2023/fdsw-github" class="list-group-item list-group-item-action"
-          >Desafío 5: Github</a
-        >
+
+        <div class="list-group-item list-group-item-action">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <p>Desafío 1: Mi Curriculum Vitae en HTML</p>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/desafio1/" role="button">Github Pages</a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/desafio1" role="button">Repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-group-item list-group-item-action">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <p>Desafío 2: Construyendo un landing page</p>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/desafio2/" role="button">Github Pages</a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/desafio2" role="button">Repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-group-item list-group-item-action">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <p>Desafío 3: Iguana page</p>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/desafio3/" role="button">Github Pages</a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/desafio3" role="button">Repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-group-item list-group-item-action">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <p>Desafío 4: Cuppon</p>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/desafio4/" role="button">Github Pages</a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/desafio4" role="button">Repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-group-item list-group-item-action">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <p>Desafío 5: Github</p>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/fdsw-github/" role="button">Github Pages</a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/fdsw-github" role="button">Repositorio</a>
+            </div>
+          </div>
+        </div>
+
         <a class="list-group-item list-group-item-action disabled"
           >Desafío 6: Desarrollo de portafolio</a
         >
       </div>
     </div>
-
     <!-- Fin lista -->
 
-    <div class="Container h2 text-center py-4" >Trabajo Colaborativo</div>
-
-    
+    <div class="Container h2 text-center py-4" id="colaborativo">
+      Trabajo Colaborativo
+    </div>
 
     <!-- Inicio Galeria de fotos -->
     <div class="container mt-3 px-5">
@@ -266,20 +353,34 @@
         <div class="col-sm-12 col-md-6">
           <div class="card">
             <img
-              src="./assets/img/cupon.jpg"
+              src="./assets/img/planta.jpg"
               class="card-img-top"
               alt="Cupon1"
             />
             <div class="card-body">
-              <p class="card-text advice-title fs-5"><a href="https://github.com/mg2023/Cuppon">https://github.com/mg2023/Cuppon</a>
-                
+              <p class="card-text advice-title fs-5 fw-semibold">
+                Colaboración a Katherine Abarza
               </p>
-              <p class="advice-brand">Colaboración a Katherine Abarza</p>
+              <p class="advice-brand">
+                <div class="list-group">
+                  <p>Proyecto: Cuppon</p>
+                  <div class="col-sm-12 col-md-6">
+                  </div>
+                  <div class="col-sm-12 col-md-6 py-1">
+                    <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/Cuppon/" role="button">Github Pages</a>
+                  </div>
+                  <div class="col-sm-1 col-md-1 py-1">
+                    <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/Cuppon" role="button">Repositorio</a>
+                  </div>
+                </div>
+              </p>
               <div class="mb-3">
                 <i class="fa-solid fa-code"></i>
                 <!-- <i class="fa-solid fa-location-dot"></i> -->
-                <p class="card-text advice-address d-inline"><a href="https://kathe-hub.github.io/">https://kathe-hub.github.io/</a>
-                  
+                <p class="card-text advice-address d-inline">
+                  <a href="https://kathe-hub.github.io/"
+                    >https://kathe-hub.github.io/</a
+                  >
                 </p>
               </div>
             </div>
@@ -295,15 +396,29 @@
               alt="Cupon1"
             />
             <div class="card-body">
-              <p class="card-text advice-title fs-5"><a href="https://github.com/mg2023/desafio_2_g25">https://github.com/mg2023/desafio_2_g25</a>
-                
+              <p class="card-text advice-title fs-5 fw-semibold">
+                Colaboración a Gastón Correa
               </p>
-              <p class="advice-brand">Colaboración a Gastón Correa </p>
+              <p class="advice-brand">
+                <div class="list-group">
+                  <p>Proyecto: Landing page</p>
+                  <div class="col-sm-12 col-md-6">
+                  </div>
+                  <div class="col-sm-12 col-md-6 py-1">
+                    <a class="btn btn-primary btn-sm" href="https://mg2023.github.io/desafio_2_g25/" role="button">Github Pages</a>
+                  </div>
+                  <div class="col-sm-1 col-md-1 py-1">
+                    <a class="btn btn-primary btn-sm" href="https://github.com/mg2023/desafio_2_g25" role="button">Repositorio</a>
+                  </div>
+                </div>
+              </p>
               <div class="mb-3">
                 <i class="fa-solid fa-code"></i>
                 <!-- <i class="fa-solid fa-location-dot"></i> -->
-                <p class="card-text advice-address d-inline"><a href="https://ton0160.github.io/">https://ton0160.github.io/</a>
-                  
+                <p class="card-text advice-address d-inline">
+                  <a href="https://ton0160.github.io/"
+                    >https://ton0160.github.io/</a
+                  >
                 </p>
               </div>
             </div>
@@ -315,32 +430,34 @@
     <!-- Fin Galeria de fotos de fotos -->
 
     <!-- Formulario final -->
-    <div class="container-fuild bg-primary text-white py-4 my-5">
-      <form>
-        <div class="mb-3 text-center fs-5 px-5">
-          <label for="exampleInputEmail1" class="form-label"
-            >Conversemos!, yo invito el cafe</label
-          >
-          <input
-            placeholder="Nombre"
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3 px-5">
-          <input
-            placeholder="Correo Electrónico"
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
-        </div>
-        <div class="d-grid gap-2 col-1 mx-auto">
-          <button type="submit" class="btn btn-light">Enviar</button>
-        </div>
-      </form>
+    <div class="container" id="contacto">
+      <div class="container-fuild bg-primary text-white py-4 my-5">
+        <form>
+          <div class="mb-3 text-center fs-5 px-5">
+            <label for="exampleInputEmail1" class="form-label"
+              >Conversemos!, yo invito el café</label
+            >
+            <input
+              placeholder="Nombre"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3 px-5">
+            <input
+              placeholder="Correo Electrónico"
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="d-grid gap-2 col-1 mx-auto">
+            <button type="submit" class="btn btn-light">Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
     <!-- Fin formulario final -->
 
